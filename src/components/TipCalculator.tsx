@@ -13,7 +13,8 @@ export function TipCalculator() {
             ? (Number(bill) / people) * (selectedPercent / 100)
             : 0;
 
-    let calculatedTotal = Number(bill) + calculatedPercentPerPerson * people;
+    let calculatedTotalPerPerson =
+        Number(bill) / people + calculatedPercentPerPerson;
 
     function handleSubmit(event: FormEvent<HTMLFormElement>) {}
 
@@ -101,7 +102,7 @@ export function TipCalculator() {
                             Total <span>/ person</span>
                         </p>
                         <p className={styles.totalsDisplay}>
-                            ${calculatedTotal.toFixed(2)}
+                            ${calculatedTotalPerPerson.toFixed(2)}
                         </p>
                     </div>
                 </div>
