@@ -1,0 +1,160 @@
+.form {
+    font-family: monospace;
+    font-weight: bold;
+
+    color: #3f3f3f;
+    background-color: white;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    gap: 1rem;
+}
+
+.left,
+.right {
+    width: 250px;
+    height: 250px;
+
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+}
+
+.right {
+    background-color: #00474b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.currencyContainer {
+    position: relative;
+    color: #bbcbcd;
+}
+
+.billInput,
+.peopleInput {
+    border: none;
+
+    background-color: #f3f8fb;
+    color: transparent;
+
+    width: 200px;
+    text-align: end;
+
+    border-radius: 0.3rem;
+
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.billInput:focus,
+.peopleInput:focus {
+    outline: none;
+}
+
+.inputIcon {
+    position: absolute;
+    display: block;
+    transform: translate(0.5rem, -2rem);
+}
+
+.numberDisplay {
+    user-select: none;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 0.3rem;
+}
+
+.selectGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.percentBoxActive,
+.percentBoxInactive {
+    color: white;
+    padding: 0.5rem 1rem;
+
+    box-shadow: 0 0 1rem -0.5rem rgba(0, 0, 0, 0.6);
+
+    border-radius: 0.3rem;
+    flex: 1;
+
+    transition: background-color 100ms;
+}
+
+.percentBoxActive:hover,
+.percentBoxInactive:hover {
+    background-color: #00a0a8;
+
+    cursor: pointer;
+}
+
+.percentBoxActive {
+    background-color: #f3f8fb;
+    color: #3f3f3f;
+}
+
+.percentBoxInactive {
+    background-color: #00474b;
+}
+
+.peopleInput {
+    color: #bbcbcd;
+}
+
+.totalsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalsText span {
+    display: block;
+    color: #a5a5a5;
+}
+
+.totalsDisplay {
+    font-size: 1.5rem;
+}
+
+.right button {
+    border: none;
+
+    border-radius: 0.5rem;
+
+    padding: 1rem 0;
+
+    color: #00474b;
+    background-color: #006c72;
+
+    cursor: pointer;
+
+    transition: background-color 100ms;
+}
+
+.right button:hover {
+    background-color: #00a0a8;
+}
